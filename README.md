@@ -1,35 +1,73 @@
-<<<<<<< HEAD
-# Python on Replit
+# Person Rest Api
 
-This is a template to get you started with Python on Replit. It's ready to go so you can just hit run and start coding!
+This project is a simple REST API for managing person resources. It supports CRUD (Create, Read, Update, Delete) operations and interfaces with a chosen database. The API allows you to create, read, update, and delete person records securely.
 
-## Running the repl
+## Objective
 
-1. Setup a new secret environment variable (the lock icon) where the key is `SECRET_KEY` and the value is
-   a randomly generated token of 32 bits of randomnese. To generate such a token type this into the shell and hit Enter:
+The main objective of this project is to build a simple REST API capable of CRUD operations on a "person" resource. The chosen programming language which is python interfaces with a database to securely manage person records.
+
+## Endpoints
+
+Endpoint: /api
+Method: POST
+Request Body: JSON data representing the new person.
+Response: JSON data of the created person.
+
+## READ: Fetching details of a person by user ID
+
+Endpoint: /api/{user_id}
+Method: GET
+Response: JSON data of the person with the specified user ID
+
+## UPDATE: Modifying details of an existing person by user ID
+
+Endpoint: /api/{user_id}
+Method: PUT
+Request Body: JSON data representing the updated person.
+Response: JSON data of the updated person.
+
+## DELETE: Removing a person by user ID
+Endpoint: /api/{user_id}
+Method: DELETE
+Response: JSON message confirming the deletion.
+
+
+## Getting Started
+
+To run this API locally, follow these steps:
+
+Clone the repository:
 ```
-python
-import secrets
-secrets.token_urlsafe(32)
+git clone https://github.com/eletrikode/hng2.git
 ```
-2. Hit run!
+## API Usage
+You can use the API to perform CRUD operations on person records. Here are some sample requests:
 
-See this 1 minute video for a walkthrough: [https://www.loom.com/share/ecc4e738149f4d1db3bcff01758b3e71](https://www.loom.com/share/341b5574d12040fb9fcbbff150777f1c)
+Creating a new person:
+```
+POST /api
+Content-Type: application/json
 
-## Installing packages
+{
+  "name": "John Doe"
+}
+```
+Reading a person by ID:
+```
+GET /api/123
+```
+Updating a person by ID:
+```
+PUT /api/123
+Content-Type: application/json
 
-To add packages to your repl, you can just import directly in the file you want to use the package in, and it will automatically be installed when you press the run button. Like below:
-```python
-import math
-import pandas as pd
+{
+  "name": "john"
+}
+```
+Deleting a person by ID:
+```
+DELETE /api/123
 ```
 
-You could also install packages by using the Replit packager interface in the left sidebar.
-
-## Help
-
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
-=======
-# hng2
-Stage 2 project for the hng internship. CRUD application with UML diagrams
 >>>>>>> origin/main
