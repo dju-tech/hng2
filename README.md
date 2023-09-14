@@ -40,6 +40,15 @@ Clone the repository:
 ```
 git clone https://github.com/eletrikode/hng2.git
 ```
+Enter the appropriate directory
+```
+cd django_project
+```
+Run the program
+```
+python manage.py runserver
+```
+
 ## API Usage
 You can use the API to perform CRUD operations on person records. Here are some sample requests:
 
@@ -70,4 +79,3 @@ Deleting a person by ID:
 DELETE /api/123
 ```
 
->>>>>>> origin/main
