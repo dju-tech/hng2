@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python on Replit
 
 This is a template to get you started with Python on Replit. It's ready to go so you can just hit run and start coding!
@@ -28,3 +29,7 @@ You could also install packages by using the Replit packager interface in the le
 ## Help
 
 If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+=======
+# hng2
+Stage 2 project for the hng internship. CRUD application with UML diagrams
+>>>>>>> origin/main
